@@ -22,7 +22,7 @@ class RedmineOauthController < AccountController
         param_arr << "#{key}=#{val}"
       end
       params_str = param_arr.join("&")
-      redirect_to settings[:url] + "/cas/oauth2.0/authorize?#{params_str}"
+      redirect_to settings[:url].gsub(/\/+$/, '') + "/cas/oauth2.0/authorize?#{params_str}"
     else
       password_authentication
     end
@@ -36,7 +36,7 @@ class RedmineOauthController < AccountController
     else
       # Access token
       code = params[:code]
-      connection = Faraday::Connection.new settings[:url], :ssl => {:verify => false} # comment :ssl part is your certificate is OK
+      connection = Faraday::Connection.new settings[:url].gsub(/\/+$/, ''), :ssl => {:verify => false} # comment :ssl part is your certificate is OK
       response = connection.post do |req|
         req.url "/cas/oauth2.0/accessToken"
         req.params["grant_type"] = "authorization_code"

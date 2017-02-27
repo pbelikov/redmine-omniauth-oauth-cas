@@ -10,7 +10,7 @@ module AccountControllerPatch
     def logout_with_oauth
       if Setting.plugin_redmine_omniauth_isu[:oauth_authentification]
         logout_user
-        redirect_to Setting.plugin_redmine_omniauth_isu[:url]+"/cas/logout"+"?service="+home_url
+        redirect_to Setting.plugin_redmine_omniauth_isu[:url].gsub(/\/+$/, '')+"/cas/logout"+"?service="+home_url
         return
       end
 
