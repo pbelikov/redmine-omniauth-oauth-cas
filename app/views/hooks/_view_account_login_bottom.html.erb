@@ -1,0 +1,10 @@
+<%= stylesheet_link_tag 'buttons', :plugin => 'redmine_omniauth_isu' %>
+
+<% if Setting.plugin_redmine_omniauth_isu[:oauth_authentification] %>
+  <%= link_to oauth_isu_path(:back_url => back_url) do %>
+    <%= button_tag :class => 'button-login' do %>
+      <%= image_tag('https://isu.ifmo.ru/i/libraries/frontend/logo/isu.png', :class => 'button-login-icon', :alt => l(:login_via_isu)) %>
+      <%= content_tag :div, l(:login_via_isu), :class => 'button-login-text' %>
+    <% end %>
+  <% end %>
+<% end %>

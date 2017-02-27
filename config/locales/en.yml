@@ -1,0 +1,4 @@
+en:
+  notice_unable_to_obtain_isu_credentials: "Unable to obtain credentials from ISU."
+  notice_access_denied: "You must allow to use you ISU credentials to enter this site."
+  login_via_isu: "Login with ISU"

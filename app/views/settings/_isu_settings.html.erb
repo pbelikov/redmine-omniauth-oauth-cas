@@ -1,0 +1,21 @@
+<%= stylesheet_link_tag 'settings', :plugin => 'redmine_omniauth_isu' %>
+
+<div class="roi_settings">
+  <p>
+    <label>Check to enable OAuth authentification:</label>
+    <%= check_box_tag "settings[oauth_authentification]", true, @settings[:oauth_authentification] %>
+  </p>
+  <p><b>Warning! All fields are required!</b></p>
+  <p>
+    <label>OAuth provider URL:</label>
+    <%= text_field_tag 'settings[url]', @settings[:url] %>
+  </p>
+  <p>
+    <label>Client ID:</label>
+    <%= text_field_tag 'settings[client_id]', @settings[:client_id] %>
+  </p>
+  <p>
+    <label>Client Secret:</label>
+    <%= text_field_tag 'settings[client_secret]', @settings[:client_secret] %>
+  </p>
+</div>

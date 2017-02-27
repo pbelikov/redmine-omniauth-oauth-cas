@@ -1,0 +1,4 @@
+ru:
+  notice_unable_to_obtain_isu_credentials: "Не удалось получить данные от ИСУ."
+  notice_access_denied: "Для корректного входа необходимо разрешить приложению доступ к аккаунту."
+  login_via_isu: "Войти через ИСУ"

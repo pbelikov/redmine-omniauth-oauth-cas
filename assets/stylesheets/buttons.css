@@ -1,0 +1,30 @@
+.button-login {
+  position: relative;
+  left: 50%;
+  display: inline-block;
+  border: 1px solid #999;
+  border-radius: 1px;
+  margin-top: 10px;
+  width: 200px;
+  height: 31px;
+  padding: 0;
+  margin-left: -100px;
+}
+
+.button-login-icon {
+  float: left;
+  height: 44px;
+  padding: 0px 0px 0px 4px;
+  margin-top: -5px
+}
+
+.button-login-text {
+  line-height: 29px;
+  background-image: -webkit-linear-gradient(bottom, #ddd, #fff);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+div#login-form {
+  opacity: 0.8;
+}
