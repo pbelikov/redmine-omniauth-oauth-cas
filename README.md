@@ -5,7 +5,7 @@ It is primarily intended to work with [ITMO university](http://www.ifmo.ru) ISU 
 
 Version of [CAS](https://apereo.github.io/cas): 5.0
 
-Version of [Redmine](http://www.redmine.org/): 3.2.3
+Version of [Redmine](http://www.redmine.org/): 3.2.3 (as of publish date, other versions should work as well)
 
 ### Features
 
@@ -24,7 +24,7 @@ cd /path/to/redmine
 bundle install
 ```
 
-2. __IMPORTANT!__ Plugin is primarily intended to work without proxy and to override issues with SSL-certificate.
+2. __IMPORTANT!__ Plugin is used to work without proxy and to override issues with SSL-certificate.
 So, if you use proxy, please go to `app/controllers/redmine_oauth_controller.rb` and comment line 7 
 (which disables proxy). And if your SSL is OK, go to the same file and comment code in line 5 and part of code in line 39.
 Yes, I know that this is BAD codestyle, but it'll work for sure.
