@@ -7,6 +7,12 @@ Version of [CAS](https://apereo.github.io/cas): 5.0
 
 Version of [Redmine](http://www.redmine.org/): 3.2.3
 
+### Features
+
++ login
++ logout
++ automatic user creation
+
 ### Installation
 
 1. Download the plugin and install required gems:
