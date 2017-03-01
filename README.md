@@ -1,3 +1,5 @@
+[![Rate at redmine.org](https://img.shields.io/badge/rate%20at-redmine.org-blue.svg?style=flat)](http://www.redmine.org/plugins/omniauth_oauth2_isu)
+
 ## Redmine omniauth OAuth2 / CAS / ISU
 
 This plugin is used to authenticate Redmine users using [CAS OAuth2](https://apereo.github.io/cas/5.0.x/installation/OAuth-OpenId-Authentication.html) provider ("Authorization Code" grant type).
@@ -74,6 +76,14 @@ User information in CAS `/cas/oauth2.0/profile` for successful login or creation
 This plugin overrides Redmine's autoregistration feature so user is created automatically if all required fields
 are provided (login, firstname, lastname, email). Uniqueness of user is checked against login.
 
+### Known issues
+
+Unfortunately, this plugin somehow conflicts with another plugin, called "Redmine Wiki Extensions Plugin" by r-labs.
+
 ### Inspiration
 
 This plugin is inspired by [twinslash](https://github.com/twinslash) plugin [Redmine omniauth google](https://github.com/twinslash/redmine_omniauth_google).
+
+### Contribution
+
+Please do not hesitatate to contribute to this project. As I know, there is still no official CAS OAuth2 (as client) support in Redmine, so maybe this plugin could help many people. Also I know that code of this plugin is far from good, maybe you could use your Ruby skills to make it better.
