@@ -5,7 +5,7 @@ It is primarily intended to work with [ITMO university](http://www.ifmo.ru) ISU 
 
 Version of [CAS](https://apereo.github.io/cas): 5.0
 
-Version of [Redmine](http://www.redmine.org/): 3.2.3 (as of publish date, other versions should work as well)
+Version of [Redmine](http://www.redmine.org/): 3.2.3 (as of publish date, other versions should work as well), 3.3, 3.3.2
 
 ### Features
 
