@@ -22,6 +22,7 @@ Version of [Redmine](http://www.redmine.org/): 3.2.3 (as of publish date, other 
 ```console
 cd /path/to/redmine/plugins
 git clone https://github.com/pbelikov/redmine-omniauth-oauth-cas.git
+mv redmine-omniauth-oauth-cas redmine_omniauth_isu
 cd /path/to/redmine
 bundle install
 ```
