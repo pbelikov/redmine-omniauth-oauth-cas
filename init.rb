@@ -7,7 +7,7 @@ Redmine::Plugin.register :redmine_omniauth_isu do
   author 'Pavel Belikov'
   description 'This is a plugin for Redmine authentication with OAuth2 (ISU ITMO + CAS)'
   version '0.0.2'
-  url 'https://github.com/pbelikov/redmine_omniauth_isu'
+  url 'https://github.com/pbelikov/redmine-omniauth-oauth-cas'
   author_url 'http://www.ifmo.ru'
 
   settings :default => {
