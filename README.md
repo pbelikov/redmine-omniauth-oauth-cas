@@ -1,5 +1,7 @@
 [![Rate at redmine.org](https://img.shields.io/badge/rate%20at-redmine.org-blue.svg?style=flat)](http://www.redmine.org/plugins/omniauth_oauth2_isu)
 
+> This plugin is no longer maintained. Please, feel free to fork and update :)
+
 ## Redmine omniauth OAuth2 / CAS / ISU
 
 This plugin is used to authenticate Redmine users using [CAS OAuth2](https://apereo.github.io/cas/5.0.x/installation/OAuth-OpenId-Authentication.html) provider ("Authorization Code" grant type).
